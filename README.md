@@ -1,23 +1,28 @@
-# MNIST-Digit-Classification:
+# MNIST Digit Classification using a Convolutional Neural Network
 
-A convolution neural network to classify the MNIST dataset with ~98% accuracy
-* Loaded the data from keras dataset API as numpy arrays (the data was already split in train and test)
-* Casting the data into float32 to be scaled later into values between [0, 1]
-* Built the Sequential using the high-level Keras API built TensorFlow
-* Built the model architecture using Keras Neural Network Layers
-* Compiled the model using Categorical Loss and Adam optimizer (for momentum optimization to speed up the training)
-* Trained the model for five epochs, using the test-set as the cross validation-set ()
-* Re-ajusted the model hyperparameters to reach ~98% accuracy
+This project implements a convolutional neural network (CNN) to classify handwritten digits from the MNIST dataset, achieving approximately 98% accuracy.
+
+* Data Preparation: The MNIST dataset was loaded using Keras' dataset API. The data, already split into training and testing sets, was converted to NumPy arrays and cast to float32 for subsequent scaling to the range [0, 1].
+
+* Model Building: The model was constructed using the Keras Sequential API, built on top of TensorFlow. The architecture consists of convolutional layers, pooling layers, and fully connected layers. 
+
+* Model Compilation and Training: The model was compiled using categorical cross-entropy loss and the Adam optimizer. Adam was chosen for its momentum-based optimization, which helps accelerate the training process. Training was performed for five epochs, utilizing the test set for validation.
+
+* Hyperparameter Tuning: Model hyperparameters, such as the learning rate, number of filters, kernel sizes, or number of layers, were iteratively adjusted to achieve the target accuracy of ~98%.
+
+* Results: The final model achieved an accuracy of ~98% on the MNIST test set.
 
 ## Package
 * Python: 3.9.6
 * Tensorflow: 2.7
+
 
 ## Libraries
 * keras
 * matplotlip
 * tensorflow
 * numpy
+
 
 ## Training Curves
 
